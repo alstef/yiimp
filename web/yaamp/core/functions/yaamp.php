@@ -18,6 +18,7 @@ function yaamp_get_algos()
 		'deep',
 		'hmq1725',
 		'keccak',
+		'keccakc',
 		'jha',
 		'hsr',
 		'lbry',
@@ -51,10 +52,13 @@ function yaamp_get_algos()
 		'skunk',
 		'timetravel',
 		'tribus',
+		'a5a',
 		'vanilla',
 		'veltor',
 		'velvet',
 		'yescrypt',
+		'yescryptR16',
+		'yescryptR32',
 		'whirlpool',
 		'zr5',
 	);
@@ -109,6 +113,8 @@ function yaamp_get_algo_norm($algo)
 		'velvet'	=> 1.0,
 		'whirlpool'	=> 1.0,
 		'yescrypt'	=> 1.0,
+		'yescryptR16'	=> 1.0,
+		'yescryptR32'	=> 1.0,
 		'zr5'		=> 1.0,
 	);
 
@@ -148,6 +154,7 @@ function getAlgoColors($algo)
 		'hmq1725'	=> '#ffa0a0',
 		'hsr'		=> '#aa70ff',
 		'keccak'	=> '#c0f0c0',
+		'keccakc'	=> '#c0f0c0',
 		'lbry'		=> '#b0d0e0',
 		'luffa'		=> '#a0c0c0',
 		'm7m'		=> '#d0a0a0',
@@ -167,10 +174,13 @@ function getAlgoColors($algo)
 		'bitcore'	=> '#f790c0',
 		'skunk'		=> '#dedefe',
 		'tribus'	=> '#c0d0d0',
+	        'a5a'		=> '#f0f0f0',
 		'vanilla'	=> '#f0f0f0',
 		'velvet'	=> '#aac0cc',
 		'whirlpool'	=> '#d0e0e0',
 		'yescrypt'	=> '#e0d0e0',
+		'yescryptR16'	=> '#e2d0e2',
+		'yescryptR32'	=> '#e2d0d2',
 		'zr5'		=> '#d0b0d0',
 
 		'MN'		=> '#ffffff', // MasterNode Earnings
@@ -218,6 +228,7 @@ function getAlgoPort($algo)
 		'skein'		=> 4933,
 		'sib'		=> 5033,
 		'keccak'	=> 5133,
+		'keccakc'	=> 5134,
 		'skein2'	=> 5233,
 		//'groestl'	=> 5333,
 		'dmd-gr'	=> 5333,
@@ -235,12 +246,15 @@ function getAlgoPort($algo)
 		'veltor'	=> 5034,
 		'velvet'	=> 6133,
 		'yescrypt'	=> 6233,
+		'yescryptR16'	=> 6333,
+		'yescryptR32'	=> 6343,
 		'bastion'	=> 6433,
 		'hsr'		=> 7433,
 		'phi'		=> 8333,
 		'polytimos'	=> 8463,
 		'skunk'		=> 8433,
 		'tribus'	=> 8533,
+	        'a5a'   	=> 8633,
 	);
 
 	global $configCustomPorts;
