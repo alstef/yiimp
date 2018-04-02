@@ -115,6 +115,7 @@ YAAMP_ALGO g_algos[] =
 
 	{"c11", c11_hash, 1, 0, 0},
 	{"x11", x11_hash, 1, 0, 0},
+	{"x12", x12_hash, 1, 0, 0},
 	{"x13", x13_hash, 1, 0, 0},
 	{"x14", x14_hash, 1, 0, 0},
 	{"x15", x15_hash, 1, 0, 0},
@@ -124,6 +125,7 @@ YAAMP_ALGO g_algos[] =
 	{"xevan", xevan_hash, 0x100, 0, 0},
 
 	{"x16r", x16r_hash, 0x100, 0, 0},
+	{"x16s", x16s_hash, 0x100, 0, 0},
 	{"timetravel", timetravel_hash, 0x100, 0, 0},
 	{"bitcore", timetravel10_hash, 0x100, 0, 0},
 	{"hsr", hsr_hash, 1, 0, 0},

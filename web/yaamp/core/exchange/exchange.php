@@ -19,6 +19,8 @@ require_once("bleutrade.php");
 require_once("ccexapi.php");
 require_once("cexio.php");
 require_once("cryptobridge.php");
+require_once("graviex.php");
+require_once("cryptohub.php");
 require_once("kraken.php");
 require_once("poloniex.php");
 require_once("yobit.php");
@@ -93,6 +95,8 @@ function getMarketUrl($coin, $marketName)
 		$url = "https://coinsmarkets.com/trade-{$base}-{$symbol}.htm";
 	else if($market == 'cryptobridge')
 		$url = "https://wallet.crypto-bridge.org/market/BRIDGE.{$symbol}_BRIDGE.{$base}";
+	else if($market == 'cryptohub')
+		$url = "https://cryptohub.online/market/{$symbol}/{$base}";
 	else if($market == 'cryptopia')
 		$url = "https://www.cryptopia.co.nz/Exchange?market={$symbol}_{$base}";
 	else if($market == 'cryptowatch')
@@ -101,6 +105,8 @@ function getMarketUrl($coin, $marketName)
 		$url = "https://c-cex.com/?p={$lowsymbol}-{$lowbase}";
 	else if($market == 'empoex')
 		$url = "http://www.empoex.com/trade/{$symbol}-{$base}";
+	else if($market == 'graviex')
+		$url = "https://graviex.net/api/v2/tickers/{$symbol}{$base}";
 	else if($market == 'jubi')
 		$url = "http://jubi.com/coin/{$lowsymbol}";
 	else if($market == 'hitbtc')
